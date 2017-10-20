@@ -13,7 +13,6 @@
 		9FD5430B1F71ADCC00A46261 /* DoIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FD543091F71ADCC00A46261 /* DoIt.xcdatamodeld */; };
 		9FD5430D1F71ADCC00A46261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD5430C1F71ADCC00A46261 /* Assets.xcassets */; };
 		9FD543101F71ADCC00A46261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD5430E1F71ADCC00A46261 /* LaunchScreen.storyboard */; };
-		9FD543181F71B1D000A46261 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD543171F71B1D000A46261 /* Task.swift */; };
 		9FD5431A1F71B7D100A46261 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD543191F71B7D100A46261 /* CreateTaskViewController.swift */; };
 		9FD5431C1F766BF700A46261 /* viewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5431B1F766BF700A46261 /* viewTaskViewController.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		9FD5430C1F71ADCC00A46261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FD5430F1F71ADCC00A46261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FD543111F71ADCC00A46261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FD543171F71B1D000A46261 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		9FD543191F71B7D100A46261 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		9FD5431B1F766BF700A46261 /* viewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,7 +65,6 @@
 				9FD543061F71ADCC00A46261 /* Main.storyboard */,
 				9FD5431B1F766BF700A46261 /* viewTaskViewController.swift */,
 				9FD543191F71B7D100A46261 /* CreateTaskViewController.swift */,
-				9FD543171F71B1D000A46261 /* Task.swift */,
 				9FD5430C1F71ADCC00A46261 /* Assets.xcassets */,
 				9FD5430E1F71ADCC00A46261 /* LaunchScreen.storyboard */,
 				9FD543111F71ADCC00A46261 /* Info.plist */,
@@ -148,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD543181F71B1D000A46261 /* Task.swift in Sources */,
 				9FD5430B1F71ADCC00A46261 /* DoIt.xcdatamodeld in Sources */,
 				9FD5431C1F766BF700A46261 /* viewTaskViewController.swift in Sources */,
 				9FD543051F71ADCC00A46261 /* TasksViewController.swift in Sources */,
@@ -278,10 +274,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DoIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Whatever.DoIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -290,10 +290,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DoIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Whatever.DoIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
